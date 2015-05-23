@@ -25,7 +25,7 @@ default[:drupal][:server][:web_group] = 'vagrant'
 default[:drupal][:server][:base] = '/srv/www'
 default[:drupal][:server][:assets] = '/assets'
 
-default[:drupal][:drush][:revision] = '6.2.0'
+default[:drupal][:drush][:revision] = '7.x'
 default[:drupal][:drush][:repository] = 'https://github.com/drush-ops/drush.git'
 default[:drupal][:drush][:dir] = '/usr/local/src/drush'
 default[:drupal][:drush][:executable] = '/usr/bin/drush'
