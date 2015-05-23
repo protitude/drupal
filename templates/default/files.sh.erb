@@ -3,10 +3,8 @@ if [ -d "<%= @assets %>" ]; then
   chown -R <%= @owner %>:<%= @group %> <%= @assets %>
 fi
 if [ -d "<%= @files %>" ]; then
-  chown <%= @owner %>:<%= @group %> <%= @files %>
+  chown www-data:www-data <%= @files %>
   chmod 777 <%= @files %>
   find <%= @files %> -type d -exec chmod 777 {} \;
   find <%= @files %> -type f -exec chmod 777 {} \;
-  find <%= @files %> -type d -exec chown www-data:www-data {} \;
-  find <%= @files %> -type f -exec chown www-data:www-data {} \;
 fi
