@@ -20,8 +20,8 @@
 
 default[:drupal][:sites] = {}
 
-default[:drupal][:server][:web_user] = 'www-data'
-default[:drupal][:server][:web_group] = 'www-data'
+default[:drupal][:server][:web_user] = 'vagrant'
+default[:drupal][:server][:web_group] = 'vagrant'
 default[:drupal][:server][:base] = '/srv/www'
 default[:drupal][:server][:assets] = '/assets'
 
@@ -31,7 +31,7 @@ default[:drupal][:drush][:dir] = '/usr/local/src/drush'
 default[:drupal][:drush][:executable] = '/usr/bin/drush'
 
 # set default web and files users
-default[:drupal][:server][:users][:web] = 'www-data:www-data'
+default[:drupal][:server][:users][:web] = 'vagrant:vagrant'
 default[:drupal][:server][:users][:files] = node[:drupal][:server][:users][:web]
 
 # drupal specific settings

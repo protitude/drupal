@@ -15,8 +15,8 @@ The cookbook does three top level categories: Server, Drush and Sites:
 
 ### The default attributes for `server` are:
 ```
-[:server][:web_user] = 'www-data'
-[:server][:web_group] = 'www-data'
+[:server][:web_user] = 'vagrant'
+[:server][:web_group] = 'vagrant'
 [:server][:base] = '/srv/www'
 [:server][:assets] = '/assets'
 ```
